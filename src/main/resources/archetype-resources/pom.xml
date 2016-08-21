@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>jar</packaging>
+
+  <name>New-Open-Source-Bukkit-Plugin</name>
+  <description>A new open source Bukkit plugin</description>
+  <url>https://epicpla.net/</url>
+  <inceptionYear>${inceptionYear}</inceptionYear>
+  <organization>
+    <name>Epic Planet Minecraft Server</name>
+    <url>https://epicpla.net/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>finalchild</id>
+      <name>Final Child</name>
+      <email>finalchild@ourmc.space</email>
+      <url>https://finalchild.cf/</url>
+      <organization>Our Minecraft Space</organization>
+      <organizationUrl>https://ourmc.space/</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>Asia/Seoul</timezone>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>>scm:git:https://github.com/EpicPlanet/${project.name}.git</connection>
+    <developerConnection>scm:git:https://github.com/EpicPlanet/${project.name}.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/EpicPlanet/${project.name}</url>
+  </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/EpicPlanet/${project.name}/issues</url>
+  </issueManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>1.10.2-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
+
+  <build>
+    <resources>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
