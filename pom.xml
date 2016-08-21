@@ -28,7 +28,7 @@
 
   <groupId>net.epicpla</groupId>
   <artifactId>open-source-archetype</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>Open-Source-Archetype</name>
