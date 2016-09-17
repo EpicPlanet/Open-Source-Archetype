@@ -28,7 +28,7 @@
 
   <groupId>net.epicpla</groupId>
   <artifactId>open-source-archetype</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>maven-archetype</packaging>
 
   <name>Open-Source-Archetype</name>
@@ -63,7 +63,7 @@
   </developers>
 
   <scm>
-    <connection>>scm:git:https://github.com/EpicPlanet/${project.name}.git</connection>
+    <connection>scm:git:https://github.com/EpicPlanet/${project.name}.git</connection>
     <developerConnection>scm:git:https://github.com/EpicPlanet/${project.name}.git</developerConnection>
     <tag>HEAD</tag>
     <url>https://github.com/EpicPlanet/${project.name}</url>
